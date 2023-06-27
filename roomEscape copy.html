@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="정성훈" content="mcssam">
+    <meta name="description" content="포트폴리오,플롯레이아웃">
+    <title>Portfolio , Float 구조 몽블랑</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="shortcut icon" href="./custom/favi.jpg">
+    <link rel="apple-touch-icon=precomposed" href="./images/sns_naver.png">
+    <!-- 기본 코딩 JS파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <!-- 기본 코딩 CSS 파일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/roomEscape.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <header>
+            <div class="cf fixed">
+                <!-- Logo, GNB -->
+                <div class="w1280 logo_gnb_left">
+                    <h1 class="logo"><a href="./index.html"><img src="./custom/logo1.png" alt="몽블랑 로고"></a></h1>
+                    <nav>
+                        <ul class="gnb"> 
+                            <!-- //&nbsp;를 안써주면 gnb에서는 엔터로 인식해버림 -->
+                            <li></li>
+                            <li><a href="#">Missions</a></li>
+                            <li><a href="#">Rates</a></li>
+                            <li><a href="#">Corporate Events</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Logo, GNB -->
+                <!-- Search Btn -->
+                <!-- <div class="search">
+                    <a href="#"><img src="./images/btn_search.png" alt="검색아이콘"></a>
+                </div> -->
+                <!-- /Search Btn -->
+            </div>
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+    centered-slides="true" autoplay-delay="3000" autoplay-disable-on-interaction="false">
+                <swiper-slide><img src="./custom/main01.jpg" alt=""></swiper-slide>
+                <swiper-slide><img src="./custom/main02.jpg" alt=""></swiper-slide>
+                <swiper-slide><img src="./custom/main03.jpg" alt=""></swiper-slide>
+                <div class="autoplay-progress" slot="container-end">
+                    <svg viewBox="0 0 48 48">
+                      <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                </div>
+            </swiper-container>
+
+            <!-- ImageText Deco -->
+            <div class="w1280 img_deco">
+                <h2>
+                     <br>
+                    
+                </h2>
+                <p>
+                </p>
+                <p>
+                    
+                </p>
+                <p>
+                    
+                </p>
+            </div>
+            <!-- /ImageText Deco -->
+        </header>
+        <!-- /Header -->
+        
+        <!-- Section CardBox -->
+        <section class="card_box">
+            <div>
+                <!-- 3단 CardBox -->
+                <div class="card_view">
+                    <h2><a href="#"><img src="./custom/contents1.jpg" alt="카드이미지1"></a></h2>
+                </div>
+                <div class="card_view">
+                    <h2><a href="#"><img src="./custom/contents2.jpg" alt="카드이미지1"></a></h2>
+                </div>
+                <div class="card_view no_mr">
+                    <h2><a href="#"><img src="./custom/contents3.jpg" alt="카드이미지1"></a></h2>
+                </div>
+                <!-- 3단 CardBox -->
+                <!-- CardBox Text -->
+                <div class="card_box_info">
+                    <div class="card_box_info_text">
+                        <h2>What is Escape Games?</h2>
+                        <h3>We specialize in technologically advanced, fully interactive gaming experiences. Unlike other <br>
+                            facilities, our seven immersive missions never reduce players to hunt for items, instead they focus on <br>
+                            dynamic and collaborative game elements.
+                        </h3>
+                    </div>
+
+                </div>
+                <!-- /CardBox Text -->
+            </div>
+        </section>
+        <!-- /Section CardBox -->
+        <!-- Section ABOUTUS -->
+        <section class="about_us">
+            <div class="about_us_tab_menus">
+                <h2 class="w1280 about_us_text">
+                    Our Escape Rooms
+                </h2>
+                <div class="about_us_title">
+                    <p class="on">Missions</p>
+                    <p>News</p>
+                    <p class="no_mr">Contact</p>
+                </div>
+                <div class="line_dots">
+                    <div class="line"></div>
+                    <div class="dot on"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="w1280 about_us_tab cf">
+                <!-- <img src="./images/aboutus.jpg" alt="Aboutus Contents"> -->
+                <div class="about_us_content">
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/mission01.jpg" alt="미션01">
+                            <h2>THE MISSING WILL</h2>
+                            <h3>Premium Mission</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>THE MISSING WILL</h4>
+                            <h5>Premium Mission</h5>
+                            <span>4-8 players</span>
+                            <p>The Missing Will is an H.P. Lovecraft – inspired mystery. Can you escape with your sanity?  </p>
+                            <button class="view_btn">VIEW MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/mission02.jpg" alt="미션02">
+                            <h2>THE ARK </h2>
+                            <h3>Premium Mission</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>THE ARK</h4>
+                            <h5>Premium Mission</h5>
+                            <span>4-8 players</span>
+                            <p>Travelling deep underwater leads you to the find of the century. Uncover the truth before your oxygen...   </p>
+                            <button class="view_btn">VIEW MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/mission03.jpg" alt="미션03">
+                            <h2>CROSSROADS</h2>
+                            <h3>Premium Mission</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>CROSSROADS</h4>
+                            <h5>Premium Mission</h5>
+                            <span>4-8 players</span>
+                            <p>A serial killer is on the loose… Can you and your team of detectives catch the killer and save the...  </p>
+                            <button class="view_btn">VIEW MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/mission04.jpg" alt="미션04">
+                            <h2>NORIKO</h2>
+                            <h3>Premium Mission</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>NORIKO</h4>
+                            <h5>Premium Mission</h5>
+                            <span>4-8 players</span>
+                            <p>The spirits of a haunted house in Osaka have latched on to your soul. Piece together the clues to solve...  </p>
+                            <button class="view_btn">VIEW MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/mission05.jpg" alt="미션05">
+                            <h2>MINDSHAFT</h2>
+                            <h3>Premium Mission</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>MINDSHAFT</h4>
+                            <h5>Premium Mission</h5>
+                            <span>4-8 players</span>
+                            <p>Experience a new way to play! Immerse yourself in Mindshaft’s dynamic atmosphere, where escape rooms...  </p>
+                            <button class="view_btn">VIEW MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/mission06.jpg" alt="미션06">
+                            <h2>PATHOGEN</h2>
+                            <h3>Premium Mission</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>PATHOGEN</h4>
+                            <h5>Premium Mission</h5>
+                            <span>4-8 players</span>
+                            <p>Pathogen is a cyber-punk themed adventure where players' choices have consequences. Which ending will...  </p>
+                            <button class="view_btn">VIEW MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/mission07.png" alt="미션07">
+                            <h2>LAST RESORT</h2>
+                            <h3>Premium Mission</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>LAST RESORT</h4>
+                            <h5>Premium Mission</h5>
+                            <span>4-8 players</span>
+                            <p>Last Resort is a horror game that will test your courage. Can you navigate the creepy motel and escape...  </p>
+                            <button class="view_btn">VIEW MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/mission08.jpg" alt="미션08">
+                            <h2>Your Mission Awaits</h2>
+                            <h3>Join Us Today</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>YOUR MISSION AWAITS</h4>
+                            <h5>Premium Mission</h5>
+                            <span>4-8 players</span>
+                            <p>All of our missions provide immersive experiences that will both challenge and entertain you. Book your mission with us today.  </p>
+                            <button class="view_btn">VIEW MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="about_us_content">
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/news01.jpg" alt="뉴스01" class="con2">
+                            <h2>What is a Logic Puzzle</h2>
+                            <h3>May 25, 2023 | Blogs</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>What is a Logic Puzzle</h4>
+                            <h5>May 25, 2023 | Blogs</h5>
+                            <p>If you’re a frequent escape room player, you’ve surely encountered your fair share of logic puzzles. You may not even realize it, but logic puzzles?...  </p>
+                            <button class="more_btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/news02.png" alt="뉴스02" class="con2">
+                            <h2>Our Favorite Escape Rooms</h2>
+                            <h3>Jun 03, 2023 | Blogs</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>Our Favorite Escape Rooms</h4>
+                            <h5>Jun 03, 2023 | Blogs</h5>
+                            <p>Escape rooms are like any other subject–everyone has a favourite. There are a variety of opinions about which escape room is best and what makes...</p>
+                            <button class="more_btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/news03.jpg" alt="뉴스03" class="con2">
+                            <h2>The Anatomy of our Scoreboard</h2>
+                            <h3>May 25, 2023 | Blogs</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>The Anatomy of our Scoreboard</h4>
+                            <h5>May 25, 2023 | Blogs</h5>
+                            <p>There’s nothing more satisfying than a thrilling, immersive escape room – except learning how you did after your game. That’s why we have our state-of-the-art...</p>
+                            <button class="more_btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/news04.jpg" alt="뉴스03" class="con2">
+                            <h2>Escape Room Vocabulary</h2>
+                            <h3>May 17, 2023 | Blogs</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>Escape Room Vocabulary</h4>
+                            <h5>May 17, 2023 | Blogs</h5>
+                            <p>Just like any business, escape rooms have their own lingo, an insider’s language that game masters and experienced players use to effectively communicate..</p>
+                            <button class="more_btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/news05.png" alt="뉴스03" class="con2">
+                            <h2>For Anyone Who’s Never Played in</h2>
+                            <h3>May 11, 2023 | Blogs</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>For Anyone Who’s Never Played in</h4>
+                            <h5>May 11, 2023 | Blogs</h5>
+                            <p>If you’ve never played an escape room before, the idea of visiting can be daunting. What if the puzzles are too easy? What if they’re too hard? Will...</p>
+                            <button class="more_btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/news06.jpg" alt="뉴스03" class="con2">
+                            <h2>How to Have a Games Birthday</h2>
+                            <h3>May 04, 2023 | Blogs</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>How to Have a Games Birthday</h4>
+                            <h5>May 04, 2023 | Blogs</h5>
+                            <p>There’s nothing that the team at Escape Games Canada enjoys more than helping you celebrate your birthday. There’s a special kind of excitement that...</p>
+                            <button class="more_btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/news07.jpg" alt="뉴스03" class="con2">
+                            <h2>You Don’t Have to Scavenger Hunt</h2>
+                            <h3>Apr 11, 2023 | Blogs</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>You Don’t Have to Scavenger Hunt</h4>
+                            <h5>Apr 11, 2023 | Blogs</h5>
+                            <p>At Escape Games Canada, we pride ourselves not only on the quality of our escape rooms, but the uniqueness of the experience. We want you to feel so immersed...</p>
+                            <button class="more_btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <div>
+                            <img src="./custom/news08.jpg" alt="뉴스03" class="con2">
+                            <h2>We’re Not Always Scare You</h2>
+                            <h3>Mar 30, 2023 | Blogs</h3>
+                        </div>
+                        <div class="mission_hover">
+                            <button class="click_btn"><img src="./custom/button01.png" alt="클릭버튼"></button>
+                            <h4>We’re Not Always Scare You</h4>
+                            <h5>Mar 30, 2023 | Blogs</h5>
+                            <p>Far too often, someone asks us if they’re about to play a scary escape room only to accuse us of lying after we tell them that it isn’t a horror-themed...</p>
+                            <button class="more_btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="about_us_content">
+                    <div class="contact w1280 cf">
+                        <div class="contact_left">
+                            <h2>Contact Us</h2>
+                            <div class="contact_line_cf cf">
+                                <div class="contact_line"></div>
+                                <p>Location – North York</p>
+                            </div>
+                            <table class="contact_us">
+                                <tr>
+                                    <th><img src="./custom/contact01.png" alt="콘텍트01"></th>
+                                    <td>
+                                        15 Kodiak Crescent, Toronto, ON <br>
+                                        5 Minute Walk from Sheppard West Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><img src="./custom/contact02.png" alt="콘텍트02"></th>
+                                    <td>
+                                        Reservations: (416) 633-6868
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><img src="./custom/contact03.png" alt="콘텍트03"></th>
+                                    <td>
+                                        Email: info@escapegames.ca
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="contact_right">
+                            <h2>Contact Form</h2>
+                            <p>
+                                Your email address will not be published. <br>
+                                Required fields are highlighted.
+                            </p>
+                            <form action="#" method="post">
+                                <div class="contact_form">
+                                    <div class="form_bd">
+                                        <label for="user_name">name<span>*</span></label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form_bd">
+                                        <label for="user_email">email<span>*</span></label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form_bd">
+                                        <label for="user_email">email<span>*</span></label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form_bd">
+                                        <label for="user_email">email<span>*</span></label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form_bd">
+                                        <label for="user_email">email<span>*</span></label>
+                                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                                    </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Section ABOUTUS -->
+        <!-- Article MOV -->
+        <!-- <article class="mov">
+            <h2 class="video">
+                <iframe 
+                width="1280" 
+                height="720" 
+                src="https://www.youtube.com/embed/X8w0J4y5X4g" 
+                title="Escape Room (2019) - Let&#39;s Play Again Scene (10/10) | Movieclips" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+                </iframe>
+            </h2>
+        </article> -->
+        <!-- /Article MOV -->
+        <!-- Section Why -->
+        <section class="why">
+            <h2 class="why_content w1280">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/utBZKgWQz4w" title="LA SAGA COMPLETA DE ESCAPE ROOM (SCAPE ROOM ) RESUMEN COMPLETO / THEGEVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </h2>
+        </section>
+        <!-- /Section Why -->
+        <!-- Section FAQ -->
+        <section class="faq_saying">
+            <h1>FAQ</h1>
+            <!-- <h2 class="faq_people w1280">
+                <div class="faq">
+                    <p class="faq_title">Can we just show up?</p>
+                    <span class="faq_content">
+                        Showing up without a booking is risky business. We can book weeks in advance and strongly recommend <br>
+                        you make a booking to ensure you can play. We get especially busy on weekends and there is absolutely <br>
+                        no guarantee that the room you want will be available if you do not have a booking.
+                    </span>
+                </div>
+                <div class="faq">
+                    <p>The internet says it might snow! Can I cancel my booking without penalty?</p>
+                </div>
+                <div class="faq">
+                    <p>I have a 14 year-old, can they play with us?</p>
+                </div>
+                <div class="faq">
+                    <p>How many people can play?</p>
+                </div>
+                <div class="faq">
+                    <p>Can I play by myself?</p>
+                </div>
+            </h2> -->
+            <dl class="w1280 faq_menu">
+                <dt class="faq_title"><span>Q.</span> Can we just show up?</dt>
+                <div class="faq_sub">
+                    <dd>
+                        <span>A.</span> Showing up without a booking is risky business. We can book weeks in advance and strongly recommend 
+                        you make a booking to ensure you can play. We get especially busy on weekends and there is absolutely 
+                        no guarantee that the room you want will be available if you do not have a booking.
+                    </dd>
+                </div>
+                <div class="faq_line"></div>
+                <dt class="faq_title"><span>Q.</span> The internet says it might snow! Can I cancel my booking without penalty?</dt>
+                <div class="faq_sub">
+                    <dd>
+                        <span>A.</span> You can always cancel in accordance with our cancellation policy. Snow and other weather conditions are 
+                        part of living in Canada. Escape Games Canada is an indoor facility and operates in all weather conditions. 
+                        In the event of severe weather which results in major road closures, a rain check date for your mission 
+                        may be offered. We may also offer a rain check in the event of a Government-issued state of emergency 
+                        or a service outage that prohibits us from honouring your booking. 
+                    </dd>
+                </div>
+                <div class="faq_line"></div>
+                <dt class="faq_title"><span>Q.</span> I have a 14 year-old, can they play with us?</dt>
+                <div class="faq_sub">
+                    <dd>
+                        <span>A.</span> All players have to be 16 years old, or older, but we can make some exceptions. Depending on the mission 
+                        you choose, and how many minors are in the group, we may be able to accommodate you. Please call us to find out! 
+                    </dd>
+                </div>
+                <div class="faq_line"></div>
+                <dt class="faq_title"><span>Q.</span> How many people can play?</dt>
+                <div class="faq_sub">
+                    <dd>
+                        <span>A.</span> The rooms are designed to be played with groups of 4 or more players. We recommend a group of 6 to 8 for ideal gameplay.
+                        Playing with fewer than the minimum number of players required means you’ll have to purchase
+                        the minimum number of tickets. It can also be challenging or damn near impossible to win.
+                    </dd>
+                </div>
+                <div class="faq_line"></div>
+                <dt class="faq_title"><span>Q.</span> Can I play by myself?</dt>
+                <div class="faq_sub">
+                    <dd>
+                        <span>A.</span> No! For safety reasons we will not let you try the room on your own. It would be nearly impossible to solve some of the puzzles in the missions unless you have mastered the art of manipulating the space-time continuum or have multiple appendages like Vishnu. If you are Vishnu, you are more than welcome to try.
+                    </dd>
+                </div>
+                <div class="faq_line"></div>
+            </dl>
+        </section>
+        <!-- /Section FAQ -->   
+        <!-- Aside Banner -->
+        <aside class="banner">
+            <h3 class="banner_img w1280 cf">
+                <!-- <a href="#"><img src="./images/banner.jpg" alt="몽블랑 배너"></a> -->
+                <div class="gift_icon">
+                    <img src="./custom/gift.png" alt="gift">
+                </div>
+                <div class="gift_text">
+                    Gift Card
+                </div>
+                <div class="gift_content">
+                    Give someone the best gift ever: a gift card to <br>
+                    Escape Games! Order one today.
+                </div>
+                <div class="shop_btn">
+                    <button type="button" class="shop_btn_size">SHOP NOW</button>
+                </div>
+            </h3>
+        </aside>
+        <!-- /Aside Banner -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="w1280">
+                <!-- Footer Logo, SNS -->
+                <dl class="footer_logo">
+                    <dt><img src="./custom/logo1.png" alt="몽블랑 로고"></dt>
+                    <dd>
+                        Players have an hour to solve their way through intense <br>
+                        scenarios using their wit, cunning, and resourcefulness. <br>
+                        Do you have what it takes to escape? <br>
+
+                    </dd>
+                    <dd class="sns"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></dd>
+                    <dd class="sns"><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></dd>
+                    <dd class="sns"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></dd>
+                    <dd class="sns no_mr"><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></dd>
+                </dl>
+                <!-- /Footer Logo, SNS -->
+                <!-- Footer Services -->
+                <dl class="footer_services">
+                    <dt>Operation Hours</dt>
+                    <dd><a href="#">Monday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLOSED</a></dd>
+                    <dd><a href="#">Tue. Wed. Thur :&nbsp;&nbsp;&nbsp;3:00 pm – 10:30 pm</a></dd>
+                    <dd><a href="#">Friday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   3:00 pm – 11:00 pm</a></dd>
+                    <dd><a href="#">Saturday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:00 pm – 11:00 pm</a></dd>
+                    <dd><a href="#">Sunday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12:00 pm – 11:00 pm</a></dd>
+                </dl>
+                <!-- /Footer Services -->
+                <!-- Footer Assistance -->
+                <dl class="footer_assistance">
+                    <dt>Customer Service</dt>
+                    <dd><a href="#">Monday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLOSED</a></dd>
+                    <dd><a href="#">Tue. Wed. Thur :&nbsp;&nbsp;&nbsp;2:00 pm – 10:00 pm</a></dd>
+                    <dd><a href="#">Friday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   2:00 pm – 10:30 pm</a></dd>
+                    <dd><a href="#">Saturday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:00 pm – 10:30 pm</a></dd>
+                    <dd><a href="#">Sunday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12:00 pm – 10:30 pm</a></dd>
+                </dl>
+                <!-- /Footer Assistance -->
+                <!-- Footer About -->
+                <dl class="footer_about">
+                    <dt>Contact Information</dt>
+                    <dd><a href="#">Reservations :	(416) 633-6868</a></dd>
+                    <dd><a href="#">Email : mouthchaos@naver.com</a></dd>
+                    <dd><a href="#">Address :</a></dd>
+                </dl>
+                <!-- /Footer About -->
+                <!-- Copyright -->
+                <div class="copyright">
+                    <div class="copyright_line"></div>
+                    <p>
+                        &copy; 2000 Montblanc Copyright 2023 © Escape Games | Privacy Policy
+                    </p>
+                </div>
+                <!-- /Copyright -->
+            </div>
+        </footer>
+        <!-- /Footer -->
+    </div>
+</body>
+<script src="./js/roomEscape.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</html>
